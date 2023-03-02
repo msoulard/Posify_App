@@ -24,7 +24,8 @@
         <COMPID name="App" mc="Standard.Package" uid="b3f15390-978b-4bc1-9432-da97b2cd0e1d"/>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="posify Use Case diagram" mc="Standard.UseCaseDiagram" uid="ffcc8ae2-aa62-4dc8-a55d-2b974661b4bb"/>
+        <COMPID name="Diagramme de cas d'utilisation" mc="Standard.UseCaseDiagram" uid="ffcc8ae2-aa62-4dc8-a55d-2b974661b4bb"/>
+        <COMPID name="Diagramme de classe" mc="Standard.ClassDiagram" uid="0d1a7aa4-3a7a-4a9b-ba42-19566671dd78"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

@@ -12,6 +12,51 @@
       <ATT name="Name"><![CDATA[Bdd]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
-    <DEPENDENCIES></DEPENDENCIES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="AdministrateurBdd" mc="Standard.Class" uid="135e2e4f-d761-486c-8d2a-185345fbacc5"/>
+        <COMPID name="ApplicationBdd" mc="Standard.Class" uid="d8c0ec29-4a77-40a4-a50f-48fe30f23c9d"/>
+        <COMPID name="LocalisationBdd" mc="Standard.Class" uid="8d139f25-5096-4b3b-90ca-9f64ada19a6e"/>
+        <COMPID name="NotificationBdd" mc="Standard.Class" uid="c385a416-e442-4ce5-a55e-7b38e897b692"/>
+        <COMPID name="PersonneBdd" mc="Standard.Class" uid="022be7ad-066a-42dc-8732-b590336a3d46"/>
+        <COMPID name="RechercheBdd" mc="Standard.Class" uid="009fa2b3-3d8d-4590-96af-f80780ecd875"/>
+        <COMPID name="UtilisationApplicationBdd" mc="Standard.Class" uid="a9c15745-251e-4f65-b9d9-0e97d8eaea7a"/>
+        <COMPID name="ConnexionBdd" mc="Standard.Class" uid="05d37150-ef2e-431d-b28c-7d72aa2079f0"/>
+        <OBJECT>
+          <ID name="StatutPersonne" mc="Standard.Enumeration" uid="09f1c1b8-eda8-4759-9f13-c5bba7be364f"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[StatutPersonne]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="bc546f54-577e-4cf5-9dcb-f2d2e1080201"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>
+etudiant
+professeur
+administration
+visiteur]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
   </OBJECT>
 </EXT>
