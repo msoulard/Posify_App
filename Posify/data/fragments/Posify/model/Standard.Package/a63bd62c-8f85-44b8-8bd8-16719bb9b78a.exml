@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="posify" version="4">
+  <OBJECT>
+    <ID name="posify" mc="Standard.Package" uid="a63bd62c-8f85-44b8-8bd8-16719bb9b78a"/>
+    <PID name="Posify" mc="Standard.Project" uid="d281d63d-6ff9-40b5-937b-4d1c469ad196"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[posify]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Se connecter" mc="Standard.UseCase" uid="de724b4f-95b6-4b28-81a6-976e483417a8"/>
+        <COMPID name="Gérer les paramètres de compte" mc="Standard.UseCase" uid="6492283c-2523-4e55-828f-2fc5f51a63f6"/>
+        <COMPID name="Chercher quelqu'un ou un groupe de personne" mc="Standard.UseCase" uid="af292606-e1c7-4348-86c5-cf0d81fe7509"/>
+        <COMPID name="Mettre à jour les données" mc="Standard.UseCase" uid="6658369b-8c3b-404c-9e5c-9077de92d428"/>
+        <COMPID name="Utilisateur" mc="Standard.Actor" uid="44dbd734-62d9-4d03-80a7-f84fa72051b0"/>
+        <COMPID name="Administrateur" mc="Standard.Actor" uid="f643c57d-dcf5-4b2a-978a-5396c566cd9a"/>
+        <COMPID name="Bdd" mc="Standard.Package" uid="94ef2d8c-0c41-4aac-ae57-c5bd2ed980c6"/>
+        <COMPID name="App" mc="Standard.Package" uid="b3f15390-978b-4bc1-9432-da97b2cd0e1d"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="posify Use Case diagram" mc="Standard.UseCaseDiagram" uid="ffcc8ae2-aa62-4dc8-a55d-2b974661b4bb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
