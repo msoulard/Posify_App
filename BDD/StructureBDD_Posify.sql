@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : jeu. 09 fév. 2023 à 15:23
+-- Généré le : jeu. 02 mars 2023 à 10:18
 -- Version du serveur :  10.4.12-MariaDB-log
 -- Version de PHP : 7.2.11
 
@@ -19,8 +19,21 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `applicationPosify`
+-- Base de données : `e2103704`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `administrateur`
+--
+
+CREATE TABLE `administrateur` (
+  `id_administrateur` int(11) NOT NULL,
+  `mdp_administrateur` varchar(50) NOT NULL,
+  `identifiant_connexion_administrateur` varchar(50) NOT NULL,
+  `id_personne` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -117,6 +130,13 @@ CREATE TABLE `utilisationApplication` (
 --
 
 --
+-- Index pour la table `administrateur`
+--
+ALTER TABLE `administrateur`
+  ADD PRIMARY KEY (`id_administrateur`),
+  ADD KEY `id_personne` (`id_personne`);
+
+--
 -- Index pour la table `application`
 --
 ALTER TABLE `application`
@@ -163,6 +183,12 @@ ALTER TABLE `utilisationApplication`
 --
 
 --
+-- AUTO_INCREMENT pour la table `administrateur`
+--
+ALTER TABLE `administrateur`
+  MODIFY `id_administrateur` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT pour la table `application`
 --
 ALTER TABLE `application`
@@ -201,6 +227,12 @@ ALTER TABLE `utilisationApplication`
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `administrateur`
+--
+ALTER TABLE `administrateur`
+  ADD CONSTRAINT `administrateur_ibfk_1` FOREIGN KEY (`id_personne`) REFERENCES `personne` (`id_personne`);
 
 --
 -- Contraintes pour la table `localisation`
