@@ -16,8 +16,6 @@
       <COMP relation="OwnedElement">
         <COMPID name="AdministrateurBdd" mc="Standard.Class" uid="135e2e4f-d761-486c-8d2a-185345fbacc5"/>
         <COMPID name="ApplicationBdd" mc="Standard.Class" uid="d8c0ec29-4a77-40a4-a50f-48fe30f23c9d"/>
-        <COMPID name="LocalisationBdd" mc="Standard.Class" uid="8d139f25-5096-4b3b-90ca-9f64ada19a6e"/>
-        <COMPID name="NotificationBdd" mc="Standard.Class" uid="c385a416-e442-4ce5-a55e-7b38e897b692"/>
         <COMPID name="PersonneBdd" mc="Standard.Class" uid="022be7ad-066a-42dc-8732-b590336a3d46"/>
         <COMPID name="RechercheBdd" mc="Standard.Class" uid="009fa2b3-3d8d-4590-96af-f80780ecd875"/>
         <COMPID name="UtilisationApplicationBdd" mc="Standard.Class" uid="a9c15745-251e-4f65-b9d9-0e97d8eaea7a"/>
@@ -34,6 +32,40 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="etudiant" mc="Standard.EnumerationLiteral" uid="3575af49-d7fc-445a-b427-b83550aba639"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[etudiant]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="professeur" mc="Standard.EnumerationLiteral" uid="085668d0-c157-4125-b2ee-5554ef951bbb"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[professeur]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="administration" mc="Standard.EnumerationLiteral" uid="5bf4057e-c7c1-4dc7-9325-a791b0dfce09"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[administration]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="visiteur" mc="Standard.EnumerationLiteral" uid="1c223073-5929-492b-8e3e-a20353e7276e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[visiteur]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
             <COMP relation="Descriptor">
               <OBJECT>
                 <ID name="" mc="Infrastructure.Note" uid="bc546f54-577e-4cf5-9dcb-f2d2e1080201"/>
@@ -56,6 +88,8 @@ visiteur]]></ATT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <COMPID name="LocalisationBdd" mc="Standard.Class" uid="8d139f25-5096-4b3b-90ca-9f64ada19a6e"/>
+        <COMPID name="NotificationBdd" mc="Standard.Class" uid="c385a416-e442-4ce5-a55e-7b38e897b692"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

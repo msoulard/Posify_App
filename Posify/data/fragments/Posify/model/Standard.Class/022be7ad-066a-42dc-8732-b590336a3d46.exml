@@ -208,45 +208,68 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="statuPersonne" mc="Standard.Attribute" uid="4c12bca3-7a92-4fa1-9647-4534cadf8c8e"/>
+          <ID name="statutPersonne" mc="Standard.AssociationEnd" uid="799b695f-3ed3-49ff-b490-96ad5a7c2b74"/>
           <ATTRIBUTES>
-            <ATT name="TypeConstraint"></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Aggregation">KindIsAggregation</ATT>
+            <ATT name="IsChangeable">true</ATT>
             <ATT name="Changeable">ReadWrite</ATT>
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[statuPersonne]]></ATT>
+            <ATT name="Name"><![CDATA[statutPersonne]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Type">
+            <LINK relation="Target">
               <REFOBJ>
                 <ID name="StatutPersonne" mc="Standard.Enumeration" uid="09f1c1b8-eda8-4759-9f13-c5bba7be364f"/>
               </REFOBJ>
             </LINK>
-            <COMP relation="Descriptor">
+            <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="02256ddc-d40a-44e3-9ed5-efff40a91732"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="6e84af65-ca01-4d91-ab81-ea38d29596b7"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
-                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">ReadWrite</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
-                  <LINK relation="Model">
-                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
-                  </LINK>
+                  <COMP relation="Opposite">
+                    <COMPID name="statutPersonne" mc="Standard.AssociationEnd" uid="799b695f-3ed3-49ff-b490-96ad5a7c2b74"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="796c063d-5c8f-4ace-a064-0fd0c4ee00ef"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
                 </DEPENDENCIES>
               </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="796c063d-5c8f-4ace-a064-0fd0c4ee00ef"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
