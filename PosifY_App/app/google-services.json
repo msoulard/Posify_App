@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "94605184535",
+    "project_id": "posify-80b9a",
+    "storage_bucket": "posify-80b9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94605184535:android:b8395ada41728bb99f5652",
+        "android_client_info": {
+          "package_name": "fr.ensim.posify_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94605184535-5ltc6sqd125156dke3ad2fbbno6a9cjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.ensim.posify_app",
+            "certificate_hash": "3a87cc138d857581a53aedba83d311fb930da6da"
+          }
+        },
+        {
+          "client_id": "94605184535-6vipjqcd91c6fqakp0hv98t7erta1r1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvDo7ytzzxXzHexNHNYObxHJJfRcV8x4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94605184535-6vipjqcd91c6fqakp0hv98t7erta1r1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
