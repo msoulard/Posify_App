@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9DB">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/search_hint"
+        android:iconifiedByDefault="false"
+        android:layout_margin="10dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/locationSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hide_location"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/historyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/profileImage1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="@string/profile_image"/>
+
+        <ImageView
+            android:id="@+id/profileImage2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="@string/profile_image"/>
+
+        <ImageView
+            android:id="@+id/profileImage3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="@string/profile_image"/>
+    </LinearLayout>
+</LinearLayout>

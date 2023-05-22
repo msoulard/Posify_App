@@ -9,4 +9,31 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login_button_text">Se connecter</string>
+    <string name="signup_text">Sinscrire</string>
+
+
+    <string name="profile">Accueil</string>
+    <string name="parcours">Rechercher</string>
+    <string name="history">Carte</string>
+    <string name="settings">Paramètres</string>
+
+
+    <string name="location_switch_text">Masquer ma localisation</string>
+    <string name="profile_image_description">Image de profil</string>
+
+    <string name="search_hint">Rechercher un étudiant</string>
+    <string name="toggle_location">Masquer ma localisation</string>
+    <string name="history_title">Historique des recherches</string>
+    <string name="friend_time">Artillio - 13:00</string>
+    <string name="hide_location">Masquer ma localisation</string>
+    <string name="profile_image">Image de profil</string>
+
+
+
+
+
 </resources>
